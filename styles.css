@@ -29,7 +29,7 @@ p {
   position: relative;
   display: block;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .section {
@@ -58,10 +58,10 @@ p {
 .color-btn:checked + label,
 .color-btn:not(:checked) + label {
   position: relative;
-   height: 40px;
-   transition: all 200ms linear;
-   border-radius: 4px;
-   overflow: hidden;
+  height: 40px;
+  transition: all 200ms linear; 
+  border-radius: 4px;
+  overflow: hidden;
   width: 40px;
   border: none;
   cursor: pointer;
@@ -80,7 +80,7 @@ p {
 }
 
 label.first-color {
-  margin-left: 500px;
+  margin-left: 58%;
   background-image: url("./images/color1.jpg");
 }
 label.color-2 {
@@ -105,7 +105,7 @@ label.color-6 {
   left: 0;
   width: 500px;
   height: 410px;
-  display: inline-block;
+  /* display: inline-block; */
   z-index: 1;
   transition: all 550ms linear;
   transition-delay: 100ms;
@@ -122,42 +122,42 @@ label.color-6 {
 }
 .for-color-1:checked ~ .img-wrap.chair-1 {
   opacity: 1;
-  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  animation: shake 0.7s linear both;
 }
 .img-wrap.chair-2 {
   background-image: url("./images/chair2.png");
 }
 .for-color-2:checked ~ .img-wrap.chair-2 {
   opacity: 1;
-  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  animation: shake 0.7s linear both;
 }
 .img-wrap.chair-3 {
   background-image: url("./images/chair3.png");
 }
 .for-color-3:checked ~ .img-wrap.chair-3 {
   opacity: 1;
-  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  animation: shake 0.7s linear both;
 }
 .img-wrap.chair-4 {
   background-image: url("./images/chair4.png");
 }
 .for-color-4:checked ~ .img-wrap.chair-4 {
   opacity: 1;
-  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  animation: shake 0.7s linear both;
 }
 .img-wrap.chair-5 {
   background-image: url("./images/chair5.png");
 }
 .for-color-5:checked ~ .img-wrap.chair-5 {
   opacity: 1;
-  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  animation: shake 0.7s linear both;
 }
 .img-wrap.chair-6 {
   background-image: url("./images/chair6.png");
 }
 .for-color-6:checked ~ .img-wrap.chair-6 {
   opacity: 1;
-  animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  animation: shake 0.7s linear both;
 }
 
 @keyframes shake {
@@ -183,7 +183,7 @@ label.color-6 {
 .back-color {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 0;  
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -233,7 +233,7 @@ label.color-6 {
   position: relative;
   margin-left: 500px;
   z-index: 1;
-  display: block;
+  /* display: block; */
   text-align: left;
 }
 
@@ -287,7 +287,7 @@ h5 {
 .desc-btn:checked + label,
 .desc-btn:not(:checked) + label {
   position: relative;
-  transition: all 200ms linear;
+  transition: all 200ms linea r;
   display: inline-block;
   border: none;
   cursor: pointer;
@@ -312,10 +312,10 @@ h5 {
   padding-top: 20px;
   padding-bottom: 30px;
   transition: all 250ms linear;
-  opacity: 0;
+  opacity: 0 ;
   overflow: hidden;
   pointer-events: none;
-  transform: translateY(-20px);                      /*here*/
+  transform: translateY(-20px); 
 }
 
 .desc-sec.accor-2 {
@@ -364,7 +364,7 @@ h5 {
   overflow: hidden;
   background-color: transparent;
   color: #fff;
-  box-shadow: 0 6px 15px 0 rgba(16, 39, 112, 0.15) ,0 -6px 15px rgba(16, 39, 112, 0.15);
+  box-shadow: 0 6px 15px 0 rgba(200, 208, 236, 0.15) ,0 -6px 15px rgba(16, 39, 112, 0.15);
   transition: all 250ms linear;
   text-decoration: none;
   margin-top: 50px;
@@ -390,21 +390,21 @@ h5 {
   box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
   background-color: #312;
 }
-.for-color-1:checked ~ .btn:before {
-  background-color: #944852;
+.for-color-1:checked ~ .info-wrap .btn:before {
+  background-color: #f16161;
 }
-.for-color-2:checked ~ .btn:before {
+.for-color-2:checked ~ .info-wrap .btn:before {
   background-color: #1a1a1a;
 }
-.for-color-3:checked ~ .btn:before {
+.for-color-3:checked ~ .info-wrap .btn:before {
   background-color: #40566e;
 }
-.for-color-4:checked ~ .btn:before {
+.for-color-4:checked ~ .info-wrap .btn:before {
   background-color: #5e89b2;
 }
-.for-color-5:checked ~ .btn:before {
+.for-color-5:checked ~ .info-wrap .btn:before {
   background-color: #8c7f76;
 }
-.for-color-6:checked ~ .btn:before {
+.for-color-6:checked ~ .info-wrap .btn:before {
   background-color: #5d6160;
 }
