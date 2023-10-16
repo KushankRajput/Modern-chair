@@ -14,7 +14,7 @@ body {
   color: #fff;
   background-color: #1f2029;
   min-height: 100vh;
-  overflow-x: none;
+  /* overflow-x: none; */
 }
 
 p {
@@ -117,51 +117,45 @@ label.color-6 {
 
 
 /* what is both */
-
 .img-wrap.chair-1 {
-  background-image: url("images/chair1.png");
+  background-image: url("./images/chair1.png");
 }
-.for-color-1:checked ~ .chair-1 {
+.for-color-1:checked ~ .img-wrap.chair-1 {
   opacity: 1;
   animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
-
 .img-wrap.chair-2 {
-  background-image: url("images/chair2.png");
+  background-image: url("./images/chair2.png");
 }
-.for-color-2:checked ~ .chair-2 {
+.for-color-2:checked ~ .img-wrap.chair-2 {
   opacity: 1;
   animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
-
 .img-wrap.chair-3 {
-  background-image: url("images/chair3.png");
+  background-image: url("./images/chair3.png");
 }
-.for-color-3:checked ~ .chair-3 {
+.for-color-3:checked ~ .img-wrap.chair-3 {
   opacity: 1;
   animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
-
 .img-wrap.chair-4 {
-  background-image: url("images/chair4.png");
+  background-image: url("./images/chair4.png");
 }
-.for-color-4:checked ~ .chair-4 {
+.for-color-4:checked ~ .img-wrap.chair-4 {
   opacity: 1;
   animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
-
 .img-wrap.chair-5 {
-  background-image: url("images/chair5.png");
+  background-image: url("./images/chair5.png");
 }
-.for-color-5:checked ~.chair-5 {
+.for-color-5:checked ~ .img-wrap.chair-5 {
   opacity: 1;
   animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
-
 .img-wrap.chair-6 {
-  background-image: url("images/chair6.png");
+  background-image: url("./images/chair6.png");
 }
-.for-color-6:checked ~ .chair-6 {
+.for-color-6:checked ~ .img-wrap.chair-6 {
   opacity: 1;
   animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
@@ -198,39 +192,40 @@ label.color-6 {
   transition-delay: 300ms;
 }
 
+
 .back-color.chair-2 {
   background-image: linear-gradient(196deg, #4c4c4c, #262626);
   opacity: 0;
 }
-.for-color-2:checked ~ .back-color{
+.for-color-2:checked ~ .back-color.chair-2 {
   opacity: 1;
 }
-.back-color.chair-3 {
+.back-color.chair-3{
   background-image: linear-gradient(196deg, #8a9fb2, #5f7991);
   opacity: 0;
 }
-.for-color-3:checked ~ .back-color{
+.for-color-3:checked ~ .back-color.chair-3 {
   opacity: 1;
 }
 .back-color.chair-4 {
   background-image: linear-gradient(196deg, #97afc3, #6789a7);
   opacity: 0;
 }
-.for-color-4:checked ~ .back-color{
+.for-color-4:checked ~ .back-color.chair-4{
   opacity: 1;
 }
 .back-color.chair-5 {
   background-image: linear-gradient(196deg, #afa6a0, #8c7f76);
   opacity: 0;
 }
-.for-color-5:checked ~ .back-color {
+.for-color-5:checked ~ .back-color.chair-5 {
   opacity: 1;
 }
 .back-color.chair-6 {
   background-image: linear-gradient(196deg, #aaadac, #838786);
   opacity: 0;
 }
-.for-color-6:checked ~ .back-color {
+.for-color-6:checked ~ .back-color.chair-6 {
   opacity: 1;
 }
 
